@@ -13,12 +13,12 @@
 
     // Add numbered cards
     colors.forEach(color => {
-        numbers.forEach(number => {
-            // 0 appears only once per color
+        numbers.forEach(
             if (number === 0) {
                 deck.push({color, type: 'Number', value: number});
+                deck.push({color, type: 'Number', value: number});
             } else {
-                // 1-9 appear twice per color
+                // 1-9 appear twice per color😎😎😎
                 deck.push({color, type: 'Number', value: number});
                 deck.push({color, type: 'Number', value: number});
             }
