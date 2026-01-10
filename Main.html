@@ -10,19 +10,30 @@
     const numbers = [...Array(10).keys()]; // 0-9
     const specialCards = ['Skip', 'Reverse', 'Draw Two'];
     const deck = [];
+    let players = [
+      {
+        name:bot1;
+    hand:[];
+      }
+      {
+        name:bot2;
+        hand:[];
+      }
+    {
+      name:bot3;
+      hand:[];
+      }
+    {
+      name:you;
+      hand:[];
+    }
+    ];
 
     // Add numbered cards
     colors.forEach(color => {
-        numbers.forEach(
-            if (number === 0) {
+        numbers.forEach(deck.push({color, type: 'Number', value: number)
                 deck.push({color, type: 'Number', value: number});
-                deck.push({color, type: 'Number', value: number});
-            } else {
-                // 1-9 appear twice per color😎😎😎
-                deck.push({color, type: 'Number', value: number});
-                deck.push({color, type: 'Number', value: number});
-            }
-        });
+                deck.push({color, type: 'Number', value: number});)
 
         // Add special cards (Skip, Reverse, Draw Two) - 2 of each per color
         specialCards.forEach(special => {
@@ -47,6 +58,9 @@
     }
 
     return deck;
+}
+function dealCards(array=deck){
+  
 }
 
 const unoDeck = generateUnoDeck();
