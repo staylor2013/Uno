@@ -4,7 +4,8 @@
     const specialCards = ['Skip', 'Reverse', 'Draw Two'];
     const deck = [];
     let players = [
-     {name:'bot1';hand:[];},
+     {name:'bot1';
+hand:[];},
       {
         name:'bot2';
         hand:[];
