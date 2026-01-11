@@ -1,11 +1,4 @@
-<DOCTYPE html>
-<html>
-<head>
-</head>
-  <body>
-    <h1 hidden>hi</h1>
-<script>
-  function generateUnoDeck() {
+ function generateUnoDeck() {
     const colors = ['Red', 'Green', 'Blue', 'Yellow'];
     const numbers = [...Array(10).keys()]; // 0-9
     const specialCards = ['Skip', 'Reverse', 'Draw Two'];
@@ -70,6 +63,3 @@ function dealCards(array=deck){
 const unoDeck = generateUnoDeck();
 alert(unoDeck);
 alert("Total cards:", unoDeck.length);
-</script>
-</body>
-</html>
