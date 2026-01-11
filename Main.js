@@ -1,13 +1,10 @@
- function generateUnoDeck() {
+ 
     const colors = ['Red', 'Green', 'Blue', 'Yellow'];
     const numbers = [...Array(10).keys()]; // 0-9
     const specialCards = ['Skip', 'Reverse', 'Draw Two'];
     const deck = [];
     let players = [
-      {
-        name:'bot1';
-        hand:[];
-      }
+     {name:'bot1';hand:[];},
       {
         name:'bot2';
         hand:[];
@@ -21,7 +18,7 @@
       hand:[];
     }
     ];
-
+function generateUnoDeck(){
     // Add numbered cards
     for (color in colors){
         for (number in numbers){
