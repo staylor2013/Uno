@@ -5,19 +5,19 @@
     const deck = [];
     let players = [
       {
-        name:bot1;
-    hand:[];
+        name:'bot1';
+        hand:[];
       }
       {
-        name:bot2;
+        name:'bot2';
         hand:[];
       }
     {
-      name:bot3;
+      name:'bot3';
       hand:[];
       }
     {
-      name:you;
+      name:'you';
       hand:[];
     }
     ];
@@ -54,9 +54,18 @@
 
     return deck;
 }
+//function to deal cards to each player
 function dealCards(array=deck){
   for (player in players) {
-    
+    for (let i in array) {
+     if (i % players.length() === 0){
+      players[i].cards.concat(splice(cards[0]));
+      i++;
+     } else {
+      i++;
+      continue;
+     }
+    }
   }
 }
 
